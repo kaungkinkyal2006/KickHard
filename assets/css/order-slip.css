@@ -1,0 +1,100 @@
+/* assets/css/order-slip.css */
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 40px;
+    background: #f7f7f7;
+}
+
+/* Slip container to center content like a paper */
+.slip-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.slip-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Client info */
+.slip-container p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Table style */
+.slip-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.slip-container th,
+.slip-container td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.slip-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.slip-container td {
+    background-color: #fff;
+}
+
+/* Total row */
+.slip-container .total {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Print / Download button */
+.slip-container .print-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slip-container .print-btn button {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.slip-container .print-btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Print-friendly adjustments */
+@media print {
+    body {
+        background: #fff;
+        margin: 0;
+    }
+    .slip-container {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .print-btn {
+        display: none;
+    }
+}

@@ -1,0 +1,91 @@
+/* assets/css/add_shoe.css */
+
+body {
+    background-color: #121212;
+    color: #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {   /* added select here */
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #eee;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    appearance: none; /* removes default dropdown arrow styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {  /* added select focus */
+    background-color: #333;
+    outline: none;
+}
+
+button {
+    background-color: #fff;
+    color: #121212;
+    padding: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.message {
+    color: #ff6b6b;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.25s ease;
+}
+
+.back-link:hover {
+    color: #fff;
+}

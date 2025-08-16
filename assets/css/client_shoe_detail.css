@@ -1,0 +1,63 @@
+.shoe-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+.shoe-detail h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #222;
+}
+
+.shoe-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+}
+
+.shoe-detail p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+}
+
+.btn-add-to-cart, .btn-back {
+  display: inline-block;
+  margin: 12px 15px 20px;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-add-to-cart {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #6a11cb;
+}
+
+.btn-back {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+}
+
+.btn-back:hover {
+  background-color: #bbb;
+}

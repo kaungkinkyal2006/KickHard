@@ -1,0 +1,117 @@
+/* Type Filter Buttons */
+.type-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* wrap on smaller screens */
+  margin-bottom: 25px;
+}
+body {
+  background: url('../images/background/sneaker_background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+/* Active Filter */
+.filter-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+main {
+  flex: 1 0 auto;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.05); /* slightly lightened overlay */
+  border-radius: 12px;
+}
+
+
+/* Optional: add underline animation for active filter */
+.filter-btn.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: #ff6b6b; /* highlight color */
+  border-radius: 2px;
+}
+
+/* Shoe List (existing styles) */
+.shoe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.shoe-card {
+  display: block;
+  width: 220px;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.9); /* light background for cards */
+  color: #111;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+
+.shoe-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+.shoe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.shoe-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.shoe-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

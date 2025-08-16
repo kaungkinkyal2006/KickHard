@@ -1,0 +1,105 @@
+/* assets/css/client_shoes.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../images/background/sneaker_background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+main {
+  flex: 1 0 auto;
+  max-width: 1100px;
+  margin: 40px auto 0 auto; /* margin top and center horizontally */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.shoe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Ensure .shoe-card behaves like a block-level link */
+.shoe-card {
+  display: block;  /* was missing, so <a> acts like block */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  color: inherit;           /* keep text color */
+  text-decoration: none;    /* remove underline */
+}
+
+.shoe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-decoration: none;  /* keep no underline on hover */
+}
+.overlay-wrapper {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.shoe-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.shoe-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.shoe-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.shoe-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Footer sticky */
+footer {
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.2);
+}
